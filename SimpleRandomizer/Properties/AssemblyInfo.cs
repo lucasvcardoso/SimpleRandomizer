@@ -6,9 +6,9 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("SimpleRandomizer")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("A simple randomizer for use with .NET projects.")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("L V CARDOSO")]
 [assembly: AssemblyProduct("SimpleRandomizer")]
 [assembly: AssemblyCopyright("Copyright ©  2020")]
 [assembly: AssemblyTrademark("")]

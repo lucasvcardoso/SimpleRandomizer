@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package >
+  <metadata>
+    <id>$id$</id>
+    <version>1.0.0</version>
+    <title>SimpleRandomizer</title>
+    <authors>Lucas Vieira de Oliveira Cardoso</authors>
+    <owners>Lucas Vieira de Oliveira Cardoso</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <license type="expression">MIT</license>
+    <projectUrl>https://github.com/lucasvcardoso/SimpleRandomizer</projectUrl>
+    <description>Simple randomizer tool for use with .NET projects.</description>
+    <releaseNotes>Initial release of the SimpleRandomizer package.</releaseNotes>
+    <summary>Simple randomizer tool for use with .NET projects.</summary>
+    <copyright>2020</copyright>
+    <tags>randomizer random randomize</tags>
+  </metadata>
+</package>
