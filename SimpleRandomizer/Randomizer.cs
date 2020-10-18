@@ -19,11 +19,7 @@ namespace SimpleRandomizer
 
         public static T PickRandomEntry<T>(IList<T> rangeToPickFrom)
         {
-            var list = rangeToPickFrom.ToDictionary(x => rangeToPickFrom.IndexOf(x));
-
-            Random random = new Random();
-
-            return list[random.Next(list.Count)];
+            return rangeToPickFrom[PickRandomEntryIndex(rangeToPickFrom)];
         }
     }
 }

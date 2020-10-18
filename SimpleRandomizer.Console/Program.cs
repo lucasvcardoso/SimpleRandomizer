@@ -11,7 +11,7 @@ namespace SimpleRandomizer.ConsoleApp
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Write your list of values separated by comma and the press Enter.");
+            Console.WriteLine("Write your list of values separated by comma and then press Enter.");
             var listString = Console.ReadLine();
             var list = listString.Split(',').ToList();
 
@@ -25,7 +25,7 @@ namespace SimpleRandomizer.ConsoleApp
             var directRandomEntry = Randomizer.PickRandomEntry(list);
 
             Console.WriteLine("Random entry picked directly: {0}", directRandomEntry);
+            Console.ReadLine();
         }
-
     }
 }
