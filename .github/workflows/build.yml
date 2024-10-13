@@ -1,25 +1,24 @@
 name: .NET Build
 
-on: push
+on: 
+    push:
+    workflow_dispatch:
+  
 jobs:
   build:
     runs-on: windows-latest
-#    strategy:
-#     matrix:
-#      dotnet: ['3.5.x', '4.0.x', '4.5.x', '4.6.x', '4.7.x', '4.8.x', '6.x', '7.x', '8.x' ]
 
     steps:
     - uses: actions/checkout@v4
- #   - name: Setup .NET ${{ matrix.dotnet }}
- #     uses: actions/setup-dotnet@v4
- #     with:
- #       dotnet-version: ${{ matrix.dotnet }}
- #   - name: Build for ${{ matrix.dotnet }}
- #     run: dotnet build --no-restore
+ 
     - name: Setup MSBuild
       uses: microsoft/setup-msbuild@v2
     - name: Build solution
       run: |
           msbuild --version
           msbuild SimpleRandomizer.sln /t:"SimpleRandomizer" /p:Configuration=Release
+    - name: Setup NuGet
+      uses: NuGet/setup-nuget@v1.0.5
 
+    - name: Restore NuGet packages
+      run: nuget restore SimpleRandomizer.sln
