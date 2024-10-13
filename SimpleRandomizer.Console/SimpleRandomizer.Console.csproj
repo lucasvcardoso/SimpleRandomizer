@@ -53,8 +53,8 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\SimpleRandomizer_netstandard20\SimpleRandomizer.csproj">
-      <Project>{2eec1ad7-f770-41e8-ae4c-3c5fad63714c}</Project>
+    <ProjectReference Include="..\SimpleRandomizer\SimpleRandomizer.csproj">
+      <Project>{8bfac8a6-674c-432d-81ec-caa011554eae}</Project>
       <Name>SimpleRandomizer</Name>
     </ProjectReference>
   </ItemGroup>
