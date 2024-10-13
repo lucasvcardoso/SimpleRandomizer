@@ -1,1 +1,25 @@
+name: .NET Build
+
+on: push
+jobs:
+  build:
+    runs-on: windows-latest
+#    strategy:
+#     matrix:
+#      dotnet: ['3.5.x', '4.0.x', '4.5.x', '4.6.x', '4.7.x', '4.8.x', '6.x', '7.x', '8.x' ]
+
+    steps:
+    - uses: actions/checkout
+ #   - name: Setup .NET ${{ matrix.dotnet }}
+ #     uses: actions/setup-dotnet@v4
+ #     with:
+ #       dotnet-version: ${{ matrix.dotnet }}
+ #   - name: Build for ${{ matrix.dotnet }}
+ #     run: dotnet build --no-restore
+    - name: Setup MSBuild
+      uses: microsoft/setup-msbuild
+    - name: Build solution
+      run: |
+          msbuild --version
+          msbuild SimpleRandomizer.sln /t:"SimpleRandomizer" /p:Configuration=Release
 
