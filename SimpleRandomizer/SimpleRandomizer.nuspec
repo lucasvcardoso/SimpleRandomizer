@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package >
+  <metadata>
+    <id>SimpleRandomizer</id>
+    <version>2.0.0</version>
+    <authors>Lucas Cardoso</authors>
+    <readme>README.md</readme>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <license type="expression">MIT</license>      
+	<projectUrl>https://github.com/lucasvcardoso/SimpleRandomizer</projectUrl>
+    <description>A simple randomizer to be used with .NET applications</description>
+    <releaseNotes>Added multi-target support.</releaseNotes>
+    <copyright>$copyright$</copyright>
+    <tags>random randomizer</tags>    
+  </metadata>
+  <files>
+	<file src=".\README.md" target=".\"/>
+	<file src="lib\**" target="lib/{framework name}[{version}]" />
+  </files>
+</package>
